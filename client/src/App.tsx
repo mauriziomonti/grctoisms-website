@@ -7,14 +7,21 @@ import { ThemeProvider } from "./contexts/ThemeContext";
 import Home from "./pages/Home";
 import Terms from "./pages/Terms";
 import Privacy from "./pages/Privacy";
+import About from "./pages/About";
+import Testimonials from "./pages/Testimonials";
+import Contact from "./pages/Contact";
 
 
 function Router() {
   return (
     <Switch>
+      <Route path={"/about"} component={About} />
+      <Route path={"/testimonials"} component={Testimonials} />
+      <Route path={"/contact"} component={Contact} />
+
       <Route path={"/privacy"} component={Privacy} />
       <Route path={"/terms"} component={Terms} />
-      <Route path={""} component={Home} />
+      <Route path={"/"} component={Home} />
       <Route path={"/404"} component={NotFound} />
       {/* Final fallback route */}
       <Route component={NotFound} />

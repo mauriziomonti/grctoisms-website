@@ -1,5 +1,5 @@
 /**
- * Home Page - grctoisms Consulting Website
+ * Aboute Page - grctoisms Consulting Website
  * 
  * Design Philosophy: Warm Contemporary Consulting
  * - Soft forest green primary color (#3D7B5F)
@@ -12,22 +12,22 @@
 import { Button } from "@/components/ui/button";
 import { Link } from "wouter";
 
-export default function Home() {
+export default function About() {
   return (
     <div className="min-h-screen flex flex-col bg-background text-foreground">
-          {/* Header Navigation */}
-          <header className="bg-white border-b border-border shadow-sm sticky top-0 z-50">
-            <nav className="container mx-auto px-4 py-4 flex items-center justify-between">
-              {/* Logo */}
-              <a href="/" className="flex items-center hover:opacity-80 transition-opacity">
-                <img src="/images/grctoisms-logo.png" alt="grctoisms" className="h-12 w-auto" />
-              </a>
-    
-              {/* Navigation Links */}
-              <div className="hidden md:flex items-center gap-8">
-                <Link href="/">
-                  
-                </Link>
+              {/* Header Navigation */}
+              <header className="bg-white border-b border-border shadow-sm sticky top-0 z-50">
+                <nav className="container mx-auto px-4 py-4 flex items-center justify-between">
+                  {/* Logo */}
+                  <a href="/" className="flex items-center hover:opacity-80 transition-opacity">
+                    <img src="/images/grctoisms-logo.png" alt="grctoisms" className="h-12 w-auto" />
+                  </a>
+        
+                  {/* Navigation Links */}
+                  <div className="hidden md:flex items-center gap-8">
+                    <Link href="/">
+                      
+                    </Link>
             <a
               href="/about"
               className="text-foreground hover:text-primary transition-colors duration-200 font-medium"
@@ -41,13 +41,14 @@ export default function Home() {
               Testimonials
             </a>
             <a
-              href="/contact"
+              href="#contact"
               className="text-foreground hover:text-primary transition-colors duration-200 font-medium"
             >
               Get in Touch
             </a>
           </div>
 
+          {/* CTA Button */}
         </nav>
       </header>
 
@@ -59,22 +60,12 @@ export default function Home() {
             {/* Left: Text Content */}
             <div className="space-y-6">
               <h1 className="text-4xl md:text-5xl font-bold text-foreground leading-tight">
-                Information Security planning for peace of mind.
+                About me
               </h1>
               <p className="text-lg text-muted-foreground leading-relaxed">
                 Professional consulting services tailored to your unique needs. We bring expertise, innovation, and dedication to every project.
               </p>
-              <div className="flex gap-4">
-                <Button className="bg-primary hover:bg-primary/90 text-white rounded-lg px-8 py-3 transition-all duration-200 transform hover:scale-105">
-                  Learn More
-                </Button>
-                <Button
-                  variant="outline"
-                  className="border-primary text-primary hover:bg-primary/10 rounded-lg px-8 py-3 transition-all duration-200"
-                >
-                  Explore Services
-                </Button>
-              </div>
+
             </div>
 
             {/* Right: Visual Element */}
@@ -91,53 +82,53 @@ export default function Home() {
         <section className="bg-muted/30 py-16 md:py-24">
           <div className="container mx-auto px-4">
             <h2 className="text-3xl md:text-4xl font-bold text-center mb-16 text-foreground">
-              Our Services
+              About
             </h2>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              {/* Box 1 */}
+              {/* Box 1 }
               <div className="bg-white rounded-2xl p-8 shadow-sm hover:shadow-md transition-shadow duration-300 border border-border">
                 <div className="bg-accent/20 rounded-xl h-24 mb-6 flex items-center justify-center">
-                  <h3 className="text-2xl font-bold text-foreground mb-4">Starter</h3>
+                  <span className="text-4xl">📊</span>
                 </div>
-                <h3 className="text-2xl font-bold text-foreground mb-4">Starter</h3>
+                <h3 className="text-2xl font-bold text-foreground mb-4">Placeholder</h3>
                 <p className="text-muted-foreground leading-relaxed">
                   Discover how our consulting services can transform your business and drive meaningful results.
                 </p>
               </div>
 
-              {/* Box 2 */}
+              {/* Box 2 }
               <div className="bg-white rounded-2xl p-8 shadow-sm hover:shadow-md transition-shadow duration-300 border border-border">
                 <div className="bg-secondary/20 rounded-xl h-24 mb-6 flex items-center justify-center">
-                  <h3 className="text-2xl font-bold text-foreground mb-4">Growth</h3>
+                  <span className="text-4xl">🎯</span>
                 </div>
-                <h3 className="text-2xl font-bold text-foreground mb-4">Growth</h3>
+                <h3 className="text-2xl font-bold text-foreground mb-4">Placeholder</h3>
                 <p className="text-muted-foreground leading-relaxed">
                   Strategic planning and execution to help you achieve your business goals with precision.
                 </p>
               </div>
 
-              {/* Box 3 */}
+              {/* Box 3 }
               <div className="bg-white rounded-2xl p-8 shadow-sm hover:shadow-md transition-shadow duration-300 border border-border">
                 <div className="bg-chart-4/20 rounded-xl h-24 mb-6 flex items-center justify-center">
-                  <h3 className="text-2xl font-bold text-foreground mb-4">Advanced</h3>
+                  <span className="text-4xl">💡</span>
                 </div>
-                <h3 className="text-2xl font-bold text-foreground mb-4">Advanced</h3>
+                <h3 className="text-2xl font-bold text-foreground mb-4">Placeholder</h3>
                 <p className="text-muted-foreground leading-relaxed">
                   Innovative solutions designed to address your unique challenges and opportunities.
                 </p>
               </div>
 
-              {/* Box 4 */}
+              {/* Box 4 
               <div className="bg-white rounded-2xl p-8 shadow-sm hover:shadow-md transition-shadow duration-300 border border-border">
                 <div className="bg-chart-2/20 rounded-xl h-24 mb-6 flex items-center justify-center">
-                  <h3 className="text-2xl font-bold text-foreground mb-4">Fractional</h3>
+                  <span className="text-4xl">🚀</span>
                 </div>
-                <h3 className="text-2xl font-bold text-foreground mb-4">Fractional security and privacy</h3>
+                <h3 className="text-2xl font-bold text-foreground mb-4">Placeholder</h3>
                 <p className="text-muted-foreground leading-relaxed">
                   Accelerate your growth with our proven methodologies and expert guidance.
                 </p>
-              </div>
+              </div>*/}
             </div>
           </div>
         </section>

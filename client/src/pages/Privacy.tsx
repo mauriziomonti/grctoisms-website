@@ -24,19 +24,13 @@ export default function Privacy() {
           {/* Navigation Links */}
           <div className="hidden md:flex items-center gap-8">
             <a
-              href="#about"
+              href="/about"
               className="text-foreground hover:text-primary transition-colors duration-200 font-medium"
             >
-              About Me
+              About
             </a>
             <a
-              href="#pricing"
-              className="text-foreground hover:text-primary transition-colors duration-200 font-medium"
-            >
-              Pricing packages
-            </a>
-            <a
-              href="#testimonials"
+              href="/testimonials"
               className="text-foreground hover:text-primary transition-colors duration-200 font-medium"
             >
               Testimonials
@@ -49,10 +43,7 @@ export default function Privacy() {
             </a>
           </div>
 
-          {/* CTA Button */}
-          <Button className="bg-primary hover:bg-primary/90 text-white rounded-lg px-6 py-2 transition-all duration-200 transform hover:scale-105">
-            Get in Touch
-          </Button>
+
         </nav>
       </header>
 
