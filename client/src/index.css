@@ -1,8 +1,10 @@
+/* Google Fonts - Warm Contemporary Consulting */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@600;700&family=Open+Sans:wght@400;500;600&display=swap');
+
 @import "tailwindcss";
 @import "tw-animate-css";
 
-/* Google Fonts - Warm Contemporary Consulting */
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@600;700&family=Open+Sans:wght@400;500;600&display=swap');
+
 
 @custom-variant dark (&:is(.dark *));
 
