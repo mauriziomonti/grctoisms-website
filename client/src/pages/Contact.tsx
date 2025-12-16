@@ -20,7 +20,7 @@ export default function Contact() {
         <nav className="container mx-auto px-4 py-4 flex items-center justify-between">
           {/* Logo */}
           <a href="/" className="flex items-center hover:opacity-80 transition-opacity">
-            <img src="/images/grctoisms-logo.png" alt="grctoisms" className="h-12 w-auto" />
+            <img src="/images/grctoisms-logo.png" alt="grctoisms" className="h-40 w-auto" />
           </a>
 
           {/* Navigation Links */}

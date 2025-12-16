@@ -20,9 +20,11 @@ export default function About() {
                 <nav className="container mx-auto px-4 py-4 flex items-center justify-between">
                   {/* Logo */}
                   <a href="/" className="flex items-center hover:opacity-80 transition-opacity">
-                    <img src="/images/grctoisms-logo.png" alt="grctoisms" className="h-12 w-auto" />
+                    <img src="/images/grctoisms-logo.png" alt="grctoisms" className="h-40 w-auto" />
                   </a>
-        
+                  <a className="text-3xl md:text-4xl font-bold text-center mb-16 text-foreground">
+                    GRCtoISMS
+                  </a>
                   {/* Navigation Links */}
                   <div className="hidden md:flex items-center gap-8">
                     <Link href="/">

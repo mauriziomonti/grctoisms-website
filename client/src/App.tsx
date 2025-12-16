@@ -11,14 +11,12 @@ import About from "./pages/About";
 import Testimonials from "./pages/Testimonials";
 import Contact from "./pages/Contact";
 
-
 function Router() {
   return (
     <Switch>
       <Route path={"/about"} component={About} />
       <Route path={"/testimonials"} component={Testimonials} />
       <Route path={"/contact"} component={Contact} />
-
       <Route path={"/privacy"} component={Privacy} />
       <Route path={"/terms"} component={Terms} />
       <Route path={"/"} component={Home} />
