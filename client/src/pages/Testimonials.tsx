@@ -29,24 +29,23 @@ export default function Testimonials() {
           <div className="hidden md:flex items-center gap-8">
             <a
               href="/about"
-              className="text-foreground hover:text-primary transition-colors duration-200 font-medium"
+              className="text-gray-800 hover:text-green-700 transition-colors duration-200 font-medium"
             >
               About
             </a>
             <a
               href="/testimonials"
-              className="text-foreground hover:text-primary transition-colors duration-200 font-medium"
+              className="text-gray-800 hover:text-green-700 transition-colors duration-200 font-medium"
             >
               Testimonials
             </a>
             <a
               href="/contact"
-              className="text-foreground hover:text-primary transition-colors duration-200 font-medium"
+              className="text-gray-800 hover:text-green-700 transition-colors duration-200 font-medium"
             >
               Get in Touch
             </a>
           </div>
-
         </nav>
       </header>
 
