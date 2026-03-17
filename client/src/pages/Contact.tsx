@@ -16,11 +16,16 @@ export default function Contact() {
   return (
     <div className="min-h-screen flex flex-col bg-background text-foreground">
       {/* Header Navigation */}
-      <header className="bg-white border-b border-border shadow-sm">
+      <header className="bg-white border-b border-gray-200 shadow-sm sticky top-0 z-50">
         <nav className="container mx-auto px-4 py-4 flex items-center justify-between">
           {/* Logo */}
           <a href="/" className="flex items-center hover:opacity-80 transition-opacity">
             <img src="/images/grctoisms-logo.png" alt="grctoisms" className="h-40 w-auto" />
+          </a>
+          
+          {/* Logo Text */}
+          <a className="text-3xl md:text-4xl font-bold text-center text-gray-800">
+            GRCtoISMS
           </a>
 
           {/* Navigation Links */}
