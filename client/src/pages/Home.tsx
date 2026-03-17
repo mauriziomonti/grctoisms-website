@@ -24,7 +24,7 @@ export default function Home() {
               </a>
               <a className="text-3xl md:text-4xl font-bold text-center mb-16 text-foreground">
               GRCtoISMS
-            </a>   
+              </a>   
               {/* Navigation Links */}
               <div className="hidden md:flex items-center gap-8">
                 <Link href="/">

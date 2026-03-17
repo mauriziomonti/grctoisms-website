@@ -1,14 +1,11 @@
 /* Google Fonts - Warm Contemporary Consulting */
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@600;700&family=Open+Sans:wght@400;500;600&display=swap');
 
-@import "tailwindcss";
-@import "tw-animate-css";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-
-
-@custom-variant dark (&:is(.dark *));
-
-@theme inline {
+:root {
   --radius-sm: calc(var(--radius) - 4px);
   --radius-md: calc(var(--radius) - 2px);
   --radius-lg: var(--radius);
@@ -45,9 +42,6 @@
   --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-ring: var(--sidebar-ring);
-}
-
-:root {
   /* Warm Contemporary Consulting - Color Palette */
   --primary: #3D7B5F; /* Soft forest green */
   --primary-foreground: #FFFFFF;
@@ -145,19 +139,16 @@
 }
 
 @layer components {
-  /**
-   * Custom container utility that centers content and adds responsive padding.
-   *
-   * This overrides Tailwind's default container behavior to:
-   * - Auto-center content (mx-auto)
-   * - Add responsive horizontal padding
-   * - Set max-width for large screens
-   *
-   * Usage: <div className="container">...</div>
-   *
-   * For custom widths, use max-w-* utilities directly:
-   * <div className="max-w-6xl mx-auto px-4">...</div>
-   */
+  
+   /*Custom container utility that centers content and adds responsive padding.
+   This overrides Tailwind's default container behavior to:
+   - Auto-center content (mx-auto)
+   - Add responsive horizontal padding
+   - Set max-width for large screens*/
+   Usage: <div className="container">...</div>
+   For custom widths, use max-w-* utilities directly:
+   <div className="max-w-6xl mx-auto px-4">...</div>
+
   .container {
     width: 100%;
     margin-left: auto;
