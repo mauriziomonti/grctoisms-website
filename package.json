@@ -1,4 +1,7 @@
 {
+  "engines": {
+    "pnpm": ">=8.0.0"
+  },
   "name": "grctoisms-website",
   "version": "1.0.0",
   "type": "module",
