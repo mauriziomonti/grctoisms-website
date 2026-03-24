@@ -1,9 +1,7 @@
 /* Google Fonts - Warm Contemporary Consulting */
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@600;700&family=Open+Sans:wght@400;500;600&display=swap');
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
 :root {
   --radius-sm: calc(var(--radius) - 4px);
@@ -141,41 +139,31 @@ input[type="radio"]:not(:disabled) {
 }
 
 @layer components {
-  
-   /*Custom container utility that centers content and adds responsive padding.
-   This overrides Tailwind's default container behavior to:
-   - Auto-center content (mx-auto)
-   - Add responsive horizontal padding
-   - Set max-width for large screens*/
-   Usage: <div className="container">...</div>
-   For custom widths, use max-w-* utilities directly:
-   <div className="max-w-6xl mx-auto px-4">...</div>
+  /* Usage: <div className="container"></div>
+     For custom widths, use max-w-* utilities directly:
+     <div className="max-w-6xl mx-auto px-4"></div>
+  */
 
   .container {
     width: 100%;
     margin-left: auto;
     margin-right: auto;
-    padding-left: 1rem; /* 16px - mobile padding */
+    padding-left: 1rem;
     padding-right: 1rem;
-  }
-
-  .flex {
-    min-height: 0;
-    min-width: 0;
   }
 
   @media (min-width: 640px) {
     .container {
-      padding-left: 1.5rem; /* 24px - tablet padding */
+      padding-left: 1.5rem;
       padding-right: 1.5rem;
     }
   }
 
   @media (min-width: 1024px) {
     .container {
-      padding-left: 2rem; /* 32px - desktop padding */
+      padding-left: 2rem;
       padding-right: 2rem;
-      max-width: 1280px; /* Standard content width */
+      max-width: 1280px;
     }
   }
 }
